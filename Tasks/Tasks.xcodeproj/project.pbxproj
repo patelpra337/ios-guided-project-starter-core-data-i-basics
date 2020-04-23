@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB233CD0244FDCD400471C08 /* Tasks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AB233CCE244FDCD300471C08 /* Tasks.xcdatamodeld */; };
+		AB233CD2244FE38100471C08 /* Task+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB233CD1244FE38100471C08 /* Task+Convenience.swift */; };
+		AB233CD5244FE73200471C08 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB233CD4244FE73200471C08 /* CoreDataStack.swift */; };
 		CEB451C8244E59CD00E5F9AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB451C7244E59CD00E5F9AD /* AppDelegate.swift */; };
 		CEB451CA244E59CD00E5F9AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB451C9244E59CD00E5F9AD /* SceneDelegate.swift */; };
 		CEB451CF244E59CD00E5F9AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB451CD244E59CD00E5F9AD /* Main.storyboard */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB233CCF244FDCD400471C08 /* Tasks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tasks.xcdatamodel; sourceTree = "<group>"; };
+		AB233CD1244FE38100471C08 /* Task+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+Convenience.swift"; sourceTree = "<group>"; };
+		AB233CD4244FE73200471C08 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		CEB451C4244E59CD00E5F9AD /* Tasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB451C7244E59CD00E5F9AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEB451C9244E59CD00E5F9AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +47,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB233CD3244FE39300471C08 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB233CCE244FDCD300471C08 /* Tasks.xcdatamodeld */,
+				AB233CD1244FE38100471C08 /* Task+Convenience.swift */,
+				AB233CD4244FE73200471C08 /* CoreDataStack.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		CEB451BB244E59CD00E5F9AD = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +79,7 @@
 				CEB451E1244E5B5700E5F9AD /* Application */,
 				CEB451E2244E5B6000E5F9AD /* View Controllers */,
 				CEB451E3244E5B6900E5F9AD /* Views */,
+				AB233CD3244FE39300471C08 /* Model */,
 				CEB451D0244E59CF00E5F9AD /* Assets.xcassets */,
 				CEB451D2244E59CF00E5F9AD /* LaunchScreen.storyboard */,
 				CEB451D5244E59CF00E5F9AD /* Info.plist */,
@@ -170,9 +187,12 @@
 			files = (
 				CEB451C8244E59CD00E5F9AD /* AppDelegate.swift in Sources */,
 				CEB451CA244E59CD00E5F9AD /* SceneDelegate.swift in Sources */,
+				AB233CD0244FDCD400471C08 /* Tasks.xcdatamodeld in Sources */,
+				AB233CD2244FE38100471C08 /* Task+Convenience.swift in Sources */,
 				CEB451DE244E5B3E00E5F9AD /* TasksTableViewController.swift in Sources */,
 				CEB451DC244E5B3300E5F9AD /* TaskTableViewCell.swift in Sources */,
 				CEB451E0244E5B4800E5F9AD /* CreateTaskViewController.swift in Sources */,
+				AB233CD5244FE73200471C08 /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +337,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 46XAGWCJPW;
 				INFOPLIST_FILE = Tasks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -334,6 +355,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 46XAGWCJPW;
 				INFOPLIST_FILE = Tasks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -368,6 +390,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AB233CCE244FDCD300471C08 /* Tasks.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AB233CCF244FDCD400471C08 /* Tasks.xcdatamodel */,
+			);
+			currentVersion = AB233CCF244FDCD400471C08 /* Tasks.xcdatamodel */;
+			path = Tasks.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CEB451BC244E59CD00E5F9AD /* Project object */;
 }

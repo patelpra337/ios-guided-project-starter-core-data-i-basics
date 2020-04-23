@@ -13,5 +13,10 @@ class TaskTableViewCell: UITableViewCell {
     // MARK: - Properties
     
     // MARK: - IBOutlets
+    @IBOutlet weak var CompletedButton: UIButton!
+    @IBOutlet weak var taskNameLabel: UILabel!
     
+    @IBAction func toggleComplete(_ sender: Any) {
+        
+    }
 }

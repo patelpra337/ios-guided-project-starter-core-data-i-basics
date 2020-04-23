@@ -7,10 +7,36 @@
 //
 
 import UIKit
+import CoreData
 
 class TasksTableViewController: UITableViewController {
 
     // MARK: - Properties
+    
+    // NOTE! This is not a good, efficient way to do this, as the fetch request
+    // will be executed every time the tasks property is accessed. We will
+    // learn a better way to do this later.
+    
+    // Read part of CRUD
+    var tasks: [Task] {
+        
+        // Fetch Request to fetch Tasks specifically
+        let fetchRequest: NSFetchRequest<Task> = Task.fetchRequest()
+        
+        // Context you want to fetch the model objects into
+        let context = CoreDataStack.shared.mainContext
+        
+        do {
+            let fetchedTasks = try context.fetch(fetchRequest)
+            
+            return fetchedTasks
+        } catch {
+            NSLog("Error fetching tasks: \(error)")
+            return []
+        }
+    }
+
+
     
     
     // MARK: - IBOutlets
